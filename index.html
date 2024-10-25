@@ -1,0 +1,382 @@
+<html>
+<title>Multa Pecunia - A variable fork from "Titillium Pro Display"</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+@font-face {
+  font-family: "test"; font-weight: 100 1000;
+  src: url("font/MultaPecunia.woff2") format("woff2-variations");
+}
+body { font-family: "test"; font-size: 1.125rem; margin:0; padding:0 }
+div { margin:0; padding:0; }
+
+a { color: #06c }
+
+em, i { font-variation-settings: "ital" 1; font-style:normal }
+
+header { width: 100%; margin:0; padding:0 }
+header > div { width:100%; color: #fff }
+header > div.info { background: #0059b3; height: 48px }
+header > div.titolo { background: #06c; height: 104px }
+header > div > div { width: 1180px; margin: 0px auto; padding:0 }
+header div div p { margin:0; padding: 10px 10px; font-size: 14px }
+header div div h1 { margin:0;padding:20px 10px; font-size: 32px; font-weight: 400; color: #fff }
+
+section { width: 1180px; margin:0 auto 40px; padding:0 }
+article { width: 890px; margin: 0 0 0 290; padding:0 }
+article p, article p.capo { margin: 5px 10px; padding:0; color: #1a1a1a; line-height: 28px; font-size: 18px }
+article p.nota { font-size: 14pt; color: #444 }
+
+h2 { margin:30px 10px;padding:0; font-size: 40px; line-height: 1.4em; font-weight: 350; color: #bf3922 }
+h3 { margin:20px 10px;padding:0; font-size: 32px; line-height: 1.4em; font-weight: 550; color: #bf3922 }
+h4 { margin:20px 10px;padding:0; font-size: 28px; line-height: 1.4em; font-weight: 700; color: #bf3922 }
+
+a.bia { color: #fff; text-decoration: none; font-size: 14px }
+a.bia:hover { font-weight: 550 }
+a.ref { font-size: 75%; font-weight: 600; padding: 0 2px }
+a.ico { text-decoration: none }
+a.ico span { text-decoration: underline solid from-font }
+.inv0 { padding: 3px 6px; background-color: #eee; color: #000 }
+.inv1 { padding: 3px 6px; background-color: #036; color: #fff }
+.inv1 a { color: #fff }
+
+hr { border:0; border-bottom: 1px solid #666; margin: 20px; padding:0 }
+
+table { margin: 15px auto; padding:0; text-align:center; font-size: 1.125rem; border-top: 1px solid #666 }
+table th { border-bottom: 1px solid #666 }
+table td { padding: 2px 6px}
+
+blockquote { margin: 10px; padding: 6px 10px 6px 20px; border-left: 3px solid #bf3922 }
+
+.f1 { font-weight: 100 }
+.f2 { font-weight: 200 }
+.f3 { font-weight: 300 }
+.f4 { font-weight: 400 }
+.f5 { font-weight: 500 }
+.f6 { font-weight: 600 }
+.f7 { font-weight: 700 }
+.f8 { font-weight: 800 }
+.f9 { font-weight: 900 }
+.f10 { font-weight: 1000 }
+
+ul li::marker { font-family:'test'; color: #bf3922 }
+ol li::marker { font-family:'test'; color: #bf3922; font-feature-settings: 'ss04'; }
+
+.testo { color: #444; width:90%; margin: 20px 10px; border:0; border-bottom: 1px solid #888; font-family: "test"; }
+input.testo { font-size:32pt; }
+button { font-size:14pt; color: #fff; margin: 10px 0; padding: 6px 10px; border:none; font-family: "test"; font-weight: 600; background-color: #06c; border-radius: 8px; cursor: pointer; }
+button:hover { background-color: #00274c; }
+
+footer { padding:0; margin:0; width: 100%; background: #2e383d; color: #fff }
+footer > div { padding:20 0; margin:0 auto; width: 1180px }
+footer p { margin: 0 10px; font-size: 18px }
+
+.rosso { color: #bf3922 }
+.feat { font-weight: 600 }
+.legg { font-weight: 200 }
+.codice { color: #666; font-size: 12pt; text-align:left; border-bottom: 1px solid #666 }
+.vsups { font-feature-settings: 'sups'; }
+.vnumr { font-feature-settings: 'numr'; }
+.vdnom { font-feature-settings: 'dnom'; }
+.vsubs { font-feature-settings: 'subs'; }
+.vfrac { font-feature-settings: 'frac'; }
+.vpnum { font-feature-settings: 'pnum'; }
+.vss01 { font-feature-settings: 'ss01'; }
+.vss02 { font-feature-settings: 'ss02'; }
+.vss10 { font-feature-settings: 'ss10'; }
+
+.vario { text-align: center; font-size: 40px; line-height: 2em; animation: variabile 4000ms infinite both; }
+.vario:hover { animation-play-state: paused; }
+
+p.unicode, p.icone { font-size: 1.6rem; line-height: 2em; margin: 15px 10px }
+p.unicode span, p.icone span { color: #666; background: #eee; border-radius: 10px; padding: 1px; line-height: 1.5em; width: 1.5em; display: inline-block; text-align:center; border: 2px solid #eee  }
+p.unicode span:hover, p.icone span:hover { background: #fcfcfc; color: #000; border: 2px solid #06c }
+
+p.unicode span:hover { cursor: default; animation: variabile 4000ms infinite both; }
+p.icone span:hover { cursor:pointer; animation: variabile2 2000ms infinite both; }
+
+.min { color: #888 }
+
+@keyframes variabile {
+	0%    { font-variation-settings: 'wght' 100, 'ital' 0; }
+	25%   { font-variation-settings: 'wght' 700, 'ital' 0; }
+	49.9% { font-variation-settings: 'wght' 100, 'ital' 0; }
+	50%   { font-variation-settings: 'wght' 100, 'ital' 1; }
+	75%   { font-variation-settings: 'wght' 700, 'ital' 1; }
+	99.9% { font-variation-settings: 'wght' 100, 'ital' 1; }
+	100%  { font-variation-settings: 'wght' 100, 'ital' 0; }
+}
+@keyframes variabile2 {
+	0%    { font-variation-settings: 'wght' 100, 'ital' 0; }
+	50%   { font-variation-settings: 'wght' 700, 'ital' 0; }
+	100%  { font-variation-settings: 'wght' 100, 'ital' 0; }
+}
+
+div.side {width: 249px; margin: 30px 0 0; padding:10px 10px 5px; float:left; border-right:1px solid #555; color: #666 }
+
+#avviso { background-color: #8f8; padding: 5px; display: none }
+
+@media only screen and (max-width: 1200px) {
+ header > div > div { width: 100%; }
+ section { width: 100% }
+ article { width: 100%; margin: 0; }
+ footer > div { width: 100% }
+ div.side {display:none }
+}
+</style>
+<body>
+	<header>
+		<div class="info">
+			<div>
+				<p><a href="https://github.com/m-casanova/MultaPecunia" class="bia">← Github</a></p>
+			</div>
+		</div>
+		<div class="titolo">
+			<div>
+				<h1>Multa Pecunia</h1>
+			</div>
+		</div>
+	</header>
+
+	<section>
+		<div class="side">
+			<p>Una breve descrizione del font derivato da <i>Titillium Pro Display</i></p>
+		</div>
+		<article>
+			<h2>Multa Pecunia, un font <span class="f1">v</span><span class="f2">a</span><span class="f3">r</span><span class="f4">i</span><span class="f5">a</span><span class="f6">b</span><span class="f7">i</span><span class="f8">l</span><span class="f9">e</span></h2>
+			<p>Utilizzare le barre di scorrimento per testare il font (come indicato dall'Accademia della Crusca, si utilizza il maschile<a class="ref" id="nt-1" href="#ref-1">[1]</a>).</p>
+			<input type="text" class="testo" value="Inserire un testo di prova ÀÈÉÌÒÙßàèéìòù"/>
+			<p><i>Impostazioni:</i> <span id="dati"></span></p>
+			<p><b>wght (100...700):</b> <input id="range_wght" type="range" value="400" min="100" max="700" step="1" oninput="aggiorna('wght', this.value)"></p>
+			<p><b>ital (0...1)</b>: <input id="range_ital" type="range" value="0" min="0" max="1" step="1" oninput="aggiorna('ital', this.value)"></p>
+			<p><button onclick="reset()">Reimposta</button></p>
+			
+			<h3>Descrizione</h3>
+			
+			<p><i>Titillium</i> è un font realizzato dall'Accademia di Belle Arti di Urbino e distribuito con licenza OFL 1.1<a class="ref" id="nt-2" href="#ref-2">[2]</a>; è ora distribuito via Google Fonts come <i>Titillium Web</i> in undici diverse versioni<a class="ref" id="nt-3" href="#ref-3">[3]</a>.</p>
+			<p>PagoPA ha creato <i>Titillium Pro Display</i><a class="ref" id="nt-4" href="#ref-4">[4]</a>. Il font variabile <i>Multa Pecunia</i> è una derivazione del font <i>Titillium Pro Display</i>, con metriche compatibili con <i><a href="https://github.com/m-casanova/Pass-A38">Pass A38</a></i>.</p>
+			<p class="vario">Multa Pecunia Variabile</p>
+			<p>Tabella delle variazioni di <i>Multa Pecunia</i>.</p>
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<th>Weight</th>
+					<th>Tondo</th>
+					<th>Corsivo</th>
+				</tr>
+				<tr class="f1">
+					<td>100</td>
+					<td>Thin</td>
+					<td><i>Thin Italic</i></td>
+				</tr>
+				<tr class="f2">
+					<td>200</td>
+					<td>ExtraLight</td>
+					<td><i>ExtraLight Italic</i></td>
+				</tr>
+				<tr class="f3">
+					<td>300</td>
+					<td>Light</td>
+					<td><i>Light Italic</i></td>
+				</tr>
+				<tr>
+					<td>400</td>
+					<td>Regular</td>
+					<td><i>Italic</i></td>
+				</tr>
+				<tr class="f5">
+					<td>500</td>
+					<td>Medium</td>
+					<td><i>Medium Italic</i></td>
+				</tr>
+				<tr class="f6">
+					<td>600</td>
+					<td>SemiBold</td>
+					<td><i>SemiBold Italic</i></td>
+				</tr>
+				<tr class="f7">
+					<td>700</td>
+					<td>Bold</td>
+					<td><i>Bold Italic</i></td>
+				</tr>
+				<tr class="f8">
+					<td>800</td>
+					<td>ExtraBold</td>
+					<td><i>ExtraBold Italic</i></td>
+				</tr>
+				<tr class="f9">
+					<td>900</td>
+					<td>Black</td>
+					<td><i>Black Italic</i></td>
+				</tr>
+				<tr class="f10">
+					<td>1000</td>
+					<td>ExtraBlack</td>
+					<td><i>ExtraBlack Italic</i></td>
+				</tr>
+			</table>
+			<p>Il font può essere utilizzato tramite un unico file in formato WOFF2 con il seguente codice CSS.</p>
+			<blockquote>@font-face {<br/>
+			&nbsp; &nbsp; font-family: "Multa Pecunia";<br/>
+			&nbsp; &nbsp; font-weight: 100 1000;<br/>
+			&nbsp; &nbsp; src: url("MultaPecunia.woff2") format("woff2-variations");<br/>
+			}</blockquote>
+			<p>Ovviamente il percorso del file deve essere adattato alla specifica situazione.</p>
+			<p>Per ottenere correttamente il corsivo con Chrome e Opera, utilizzare il seguente codice CSS.</p>
+			<blockquote>em, i { font-variation-settings: "ital" 1; font-style:normal }</blockquote>
+
+			<h3 id="caratteristiche">Caratteristiche</h3>
+			<p>Il font è distribuito nei formati ttf e WOFF2 e sono supportate le seguenti caratteristiche.</p>
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td class="feat">'sups'</td>
+					<td>A0123456789</td>
+					<td class="legg">→</td>
+					<td class="vsups">A0123456789</td>
+					<td class="vsups"><i>A0123456789</i></td>
+				<tr>
+				<tr>
+					<td colspan="5" class="codice">font-feature-settings: 'sups';</td>
+				</tr>
+				<tr>
+					<td class="feat">'numr'</td>
+					<td>A0123456789</td>
+					<td class="legg">→</td>
+					<td class="vnumr">A0123456789</td>
+					<td class="vnumr"><i>A0123456789<i></td>
+				<tr>
+				<tr>
+					<td colspan="5" class="codice">font-feature-settings: 'numr';</td>
+				</tr>
+				<tr>
+					<td class="feat">'dnom'</td>
+					<td>A0123456789</td>
+					<td class="legg">→</td>
+					<td class="vdnom">A0123456789</td>
+					<td class="vdnom"><i>A0123456789</i></td>
+				<tr>
+				<tr>
+					<td colspan="5" class="codice">font-feature-settings: 'dnom';</td>
+				</tr>
+				<tr>
+					<td class="feat">'subs'</td>
+					<td>A0123456789</td>
+					<td class="legg">→</td>
+					<td class="vsubs">A0123456789</td>
+					<td class="vsubs"><i>A0123456789</i></td>
+				<tr>
+				<tr>
+					<td colspan="5" class="codice">font-feature-settings: 'subs';</td>
+				</tr>
+				<tr>
+					<td class="feat">'frac'</td>
+					<td>A12345/67890</td>
+					<td class="legg">→</td>
+					<td class="vfrac">A12345/67890</td>
+					<td class="vfrac"><i>A12345/67890</i></td>
+				<tr>
+				<tr>
+					<td colspan="5" class="codice">font-feature-settings: 'frac';</td>
+				</tr>
+				<tr>
+					<td class="feat">'pnum'</td>
+					<td>A0123456789</td>
+					<td class="legg">→</td>
+					<td class="vpnum">A0123456789</td>
+					<td class="vpnum"><i>A0123456789</i></td>
+				<tr>
+				<tr>
+					<td colspan="5" class="codice">font-feature-settings: 'pnum';</td>
+				</tr>
+				<tr>
+					<td class="feat">'ss01'</td>
+					<td>aàáâãäåāăąǎạ</td>
+					<td class="legg">→</td>
+					<td class="vss01">aàáâãäåāăąǎạ</td>
+					<td class="vss01"><i>aàáâãäåāăąǎạ</i></td>
+				<tr>
+				<tr>
+					<td colspan="5" class="codice">font-feature-settings: 'ss01';</td>
+				</tr>
+				<tr>
+					<td class="feat">'ss02'</td>
+					<td>l ĺ ļ ľ ŀ ḷ</td>
+					<td class="legg">→</td>
+					<td class="vss02">l ĺ ļ ľ ŀ ḷ</td>
+					<td class="vss02"><i>l ĺ ļ ľ ŀ ḷ</i></td>
+				<tr>
+				<tr>
+					<td colspan="5" class="codice">font-feature-settings: 'ss02';</td>
+				</tr>
+				<tr>
+					<td class="feat">'ss10'</td>
+					<td>1234567890</td>
+					<td class="legg">→</td>
+					<td class="vss10">1234567890</td>
+					<td class="vss10"><i>1234567890</i></td>
+				<tr>
+				<tr>
+					<td colspan="5" class="codice">font-feature-settings: 'ss03';</td>
+				</tr>
+			</table>
+
+			<h4>Note</h4>
+			<p class="nota" id="ref-1"><a href="#nt-1">1]</a> <i><a href="https://accademiadellacrusca.it/it/consulenza/sul-genere-di-font/984" target="_blank">Sul genere di font</a></i>, Accademia della Crusca.</p>
+			<p class="nota" id="ref-2"><a href="#nt-2">2]</a> <i><a href="https://github.com/ecm4u/Titillium" target="_blank">Titillium</a></i>, Github.</p>
+			<p class="nota" id="ref-3"><a href="#nt-3">3]</a> <i><a href="https://fonts.google.com/specimen/Titillium+Web" target="_blank">Titillium Web</a></i>, Google Fonts.</p>
+			<p class="nota" id="ref-4"><a href="#nt-4">4]</a> Cfr. <i><a href="https://github.com/pagopa/titillium-pro-display" target="_blank">Titillium Pro Display</a></i>, PagoPA.</p>
+		</article>
+	</section>
+	<footer>
+		<div>
+			<p>&copy; 2024 Michele Casanova
+		</div>
+	</footer>
+
+<script>
+	var axis = { "wght": 400, "ital": 0 }
+
+	function aggiorna2() {
+		let testi = document.querySelectorAll(".testo");
+		if (!testi) {
+			console.error("Elemento .testo non presente");
+			return;
+		}
+
+		let first = true;
+		let settings = "";
+		
+		for (let ax in axis) {
+			if (!first) {
+				settings += ", "
+			}
+			settings += "'" + ax + "' " + axis[ax];
+			first = false;
+		}
+		
+		for (let tt of testi) {
+			tt.style.fontVariationSettings = settings;
+		}
+
+		document.querySelector("#dati").innerHTML = settings;
+		
+	}
+	
+	function aggiorna(a, b) {
+		axis[a] = b;
+		aggiorna2();
+	}
+							
+	function reset() {
+		let range = null;
+
+		axis["wght"] = 400;
+		document.querySelector("#range_wght").value = 400;
+
+		axis["ital"] = 0;
+		document.querySelector("#range_ital").value = 0;
+
+		aggiorna2();
+	}
+	reset();
+</script>
+<body>
+</html>
