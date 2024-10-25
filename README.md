@@ -1,4 +1,5 @@
 # Multa Pecunia
+- Versione 1.107: sistemazione numeri.
 - Versione 1.0: versione iniziale.
 
 Per maggiori informazioni e per testare il font, vedere la [pagina interattiva](https://m-casanova.github.io/MultaPecunia/).
