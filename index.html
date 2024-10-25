@@ -98,16 +98,11 @@ p.icone span:hover { cursor:pointer; animation: variabile2 2000ms infinite both;
 
 @keyframes variabile {
 	0%    { font-variation-settings: 'wght' 100, 'ital' 0; }
-	25%   { font-variation-settings: 'wght' 700, 'ital' 0; }
+	25%   { font-variation-settings: 'wght' 1000, 'ital' 0; }
 	49.9% { font-variation-settings: 'wght' 100, 'ital' 0; }
 	50%   { font-variation-settings: 'wght' 100, 'ital' 1; }
-	75%   { font-variation-settings: 'wght' 700, 'ital' 1; }
+	75%   { font-variation-settings: 'wght' 1000, 'ital' 1; }
 	99.9% { font-variation-settings: 'wght' 100, 'ital' 1; }
-	100%  { font-variation-settings: 'wght' 100, 'ital' 0; }
-}
-@keyframes variabile2 {
-	0%    { font-variation-settings: 'wght' 100, 'ital' 0; }
-	50%   { font-variation-settings: 'wght' 700, 'ital' 0; }
 	100%  { font-variation-settings: 'wght' 100, 'ital' 0; }
 }
 
@@ -146,7 +141,7 @@ div.side {width: 249px; margin: 30px 0 0; padding:10px 10px 5px; float:left; bor
 			<p>Utilizzare le barre di scorrimento per testare il font (come indicato dall'Accademia della Crusca, si utilizza il maschile<a class="ref" id="nt-1" href="#ref-1">[1]</a>).</p>
 			<input type="text" class="testo" value="Inserire un testo di prova ÀÈÉÌÒÙßàèéìòù"/>
 			<p><i>Impostazioni:</i> <span id="dati"></span></p>
-			<p><b>wght (100...700):</b> <input id="range_wght" type="range" value="400" min="100" max="700" step="1" oninput="aggiorna('wght', this.value)"></p>
+			<p><b>wght (100...1000):</b> <input id="range_wght" type="range" value="400" min="100" max="1000" step="1" oninput="aggiorna('wght', this.value)"></p>
 			<p><b>ital (0...1)</b>: <input id="range_ital" type="range" value="0" min="0" max="1" step="1" oninput="aggiorna('ital', this.value)"></p>
 			<p><button onclick="reset()">Reimposta</button></p>
 			
