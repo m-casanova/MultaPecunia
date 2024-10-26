@@ -20,7 +20,7 @@ Per ottenere correttamente il corsivo con Chrome e Opera, utilizzare il seguente
 ## Descrizione
 ![image](images/multapecunia1.jpg)
 
-_Multa Pecunia_ è un font variabile derivato da _[Titillium Pro Display](https://github.com/pagopa/titillium-pro-display)_ di PagoPA (con alcune modifiche); il font _Multa Pecunia_ ha metriche compatibili con quelle di _Pass A38_.
+_Multa Pecunia_ è un font variabile derivato da _[Titillium Pro Display](https://github.com/pagopa/titillium-pro-display)_ di PagoPA (con alcune modifiche); il font _Multa Pecunia_ ha metriche compatibili con quelle di _[Pass A38](https://github.com/m-casanova/Pass-A38)_.
 
 ![image](images/multapecunia2.jpg)
 
