@@ -1,4 +1,5 @@
 # Multa Pecunia
+- Versione 1.116: aggiunte minori (e.g. ⁋, ❡).
 - Versione 1.112: fix minori per kerning e posizioni.
 - Versione 1.107: sistemazione numeri.
 - Versione 1.0: versione iniziale.
