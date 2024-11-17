@@ -1,4 +1,5 @@
 # Multa Pecunia
+- Versione 1.541: fix minori e aggiunta di alcuni caratteri (e.g. ℃, ℅, ℉).
 - Versione 1.535: fix minori.
 - Versione 1.532: sistemazione sups, numr, dnom, subs e frazioni con numeri più leggibili.
 - Versione 1.116: aggiunte minori (e.g. ⁋, ❡).
