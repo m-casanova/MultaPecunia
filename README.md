@@ -1,11 +1,12 @@
 # Multa Pecunia
-- Versione 1.541: fix minori e aggiunta di alcuni caratteri (e.g. ℃, ℅, ℉).
-- Versione 1.535: fix minori.
-- Versione 1.532: sistemazione sups, numr, dnom, subs e frazioni con numeri più leggibili.
-- Versione 1.116: aggiunte minori (e.g. ⁋, ❡).
-- Versione 1.112: fix minori per kerning e posizioni.
-- Versione 1.107: sistemazione numeri.
-- Versione 1.0: versione iniziale.
+- Versione 1.544: fix frazioni
+- Versione 1.541: fix minori e aggiunta di alcuni caratteri (e.g. ℃, ℅, ℉)
+- Versione 1.535: fix minori
+- Versione 1.532: sistemazione sups, numr, dnom, subs e frazioni con numeri più leggibili
+- Versione 1.116: aggiunte minori (e.g. ⁋, ❡)
+- Versione 1.112: fix minori per kerning e posizioni
+- Versione 1.107: sistemazione numeri
+- Versione 1.0: versione iniziale
 
 Per maggiori informazioni e per testare il font, vedere la [pagina interattiva](https://m-casanova.github.io/MultaPecunia/).
 
