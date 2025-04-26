@@ -1,4 +1,5 @@
 # Multa Pecunia
+- Versione 1.545: fix minore
 - Versione 1.544: fix frazioni
 - Versione 1.541: fix minori e aggiunta di alcuni caratteri (e.g. ℃, ℅, ℉)
 - Versione 1.535: fix minori
